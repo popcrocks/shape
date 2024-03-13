@@ -7,7 +7,6 @@ import (
 	"github.com/go-rod/rod/lib/launcher"
 	"github.com/go-rod/rod/lib/launcher/flags"
 	"github.com/go-rod/rod/lib/proto"
-
 	"github.com/go-rod/stealth"
 )
 
@@ -48,12 +47,12 @@ func LoadSite(page *rod.Page, address string) {
 }
 
 type ShapeHeaders struct {
-	XGyJwza5Za string `json:"X-GyJwza5Z-a"`
-	XGyJwza5Zb string `json:"X-GyJwza5Z-b"`
-	XGyJwza5Zc string `json:"X-GyJwza5Z-c"`
-	XGyJwza5Zd string `json:"X-GyJwza5Z-d"`
-	XGyJwza5Zf string `json:"X-GyJwza5Z-f"`
-	XGyJwza5Zz string `json:"X-GyJwza5Z-z"`
+	XDy6zuyp5a string `json:"X-Dy6zuyp5-a"`
+	XDy6zuyp5b string `json:"X-Dy6zuyp5-b"`
+	XDy6zuyp5c string `json:"X-Dy6zuyp5-c"`
+	XDy6zuyp5d string `json:"X-Dy6zuyp5-d"`
+	XDy6zuyp5f string `json:"X-Dy6zuyp5-f"`
+	XDy6zuyp5z string `json:"X-Dy6zuyp5-z"`
 }
 
 type ShapeHarvester struct {
@@ -115,23 +114,23 @@ func (harvester *ShapeHarvester) InitializeHijacking() {
 				ctx.Response.Fail(proto.NetworkErrorReasonBlockedByClient)
 				for key, value := range ctx.Request.Headers() {
 					switch key {
-					case "X-GyJwza5Z-a":
-						harvester.Headers.XGyJwza5Za = value.String()
+					case "X-Dy6zuyp5-a":
+						harvester.Headers.XDy6zuyp5a = value.String()
 
-					case "X-GyJwza5Z-b":
-						harvester.Headers.XGyJwza5Zb = value.String()
+					case "X-Dy6zuyp5-b":
+						harvester.Headers.XDy6zuyp5b = value.String()
 
-					case "X-GyJwza5Z-c":
-						harvester.Headers.XGyJwza5Zc = value.String()
+					case "X-Dy6zuyp5-c":
+						harvester.Headers.XDy6zuyp5c = value.String()
 
-					case "X-GyJwza5Z-d":
-						harvester.Headers.XGyJwza5Zd = value.String()
+					case "X-Dy6zuyp5-d":
+						harvester.Headers.XDy6zuyp5d = value.String()
 
-					case "X-GyJwza5Z-f":
-						harvester.Headers.XGyJwza5Zf = value.String()
+					case "X-Dy6zuyp5-f":
+						harvester.Headers.XDy6zuyp5f = value.String()
 
-					case "X-GyJwza5Z-z":
-						harvester.Headers.XGyJwza5Zz = value.String()
+					case "X-Dy6zuyp5-z":
+						harvester.Headers.XDy6zuyp5z = value.String()
 					}
 				}
 			}
